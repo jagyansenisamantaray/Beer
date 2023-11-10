@@ -5,11 +5,11 @@ import { useFormik } from "formik";
 import { signUpSchema } from "../schemas/index";
 
 const initialValues = {
-  name: "",
+  fullname: "",
+  dob:"",
   email: "",
   password: "",
-  confirm_password: "",
-};
+  };
 const Modal = ({ setIsOpen }) => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
@@ -85,7 +85,7 @@ const Modal = ({ setIsOpen }) => {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   />
-                  {errors.password && touched.pssword ? (
+                  {errors.password && touched.password ? (
                       <p className="form-error">{errors.password}</p>
                     ) : null}
                 </div>

@@ -1,5 +1,5 @@
 .darkBG {
-    background-color: black;
+    background-color: burlywood;
     width: 100vw;
     height: 100vh;
     /* z-index: 0; */
@@ -24,6 +24,7 @@
     z-index: 10;
     border-radius: 16px;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    overflow: hidden;
     
   }
   
@@ -115,7 +116,7 @@
     border-radius: 12px;
     font-size: 0.8rem;
     border: none;
-    color: #2c3e50;
+    color: #2ba99e;
     background: #fcfcfc;
     transition: all 0.25s ease;
   }
@@ -123,5 +124,8 @@
   .cancelBtn:hover {
     box-shadow: none;
     transform: none;
-    background: whitesmoke;
+    background: rgb(44, 40, 40);
+  }
+  .form-error{
+    color:red;
   }
